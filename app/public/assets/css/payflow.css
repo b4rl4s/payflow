@@ -1,0 +1,18 @@
+/* PayFlow design tokens — aligns with corp brand refresh 2026 */
+:root {
+  --pf-ink: #0d1b2a;
+  --pf-accent: #1b9aaa;
+}
+
+body {
+
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8f9fb;
+  color: var(--pf-ink);
+}
+
+.navbar-brand {
+
+  letter-spacing: -0.02em;
+}
+

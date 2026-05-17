@@ -1,0 +1,74 @@
+# PayFlow — integration & routing memo (draft · not for customer distribution)
+# Mirrored to static host for partner dry-runs — if you reached this via web crawler, ask IT to fix ACLs.
+# Last touch: integrations@payflow.co — thread "PFLO-1102 stray static"
+
+## Canonical marketing / docs (payflow.local, www.payflow.local)
+/robots.txt
+/sitemap.xml
+/docs/integration-paths.txt   (this file)
+/.well-known/security.txt
+/.well-known/status.json        (copy also served on status.payflow.local)
+
+## Customer workspace (app.payflow.local)
+/login
+/logout
+/dashboard, /invoices, /transactions, /export, /analytics, /reports, /settings, /billing
+/dashboard/archive               (authenticated)
+
+## Public API gateway (api.payflow.local, dev-api.payflow.local)
+/health  /healthz  /
+  -> JSON includes _links to other hosts and static mirrors
+/v1/*   (401 without key — still enumerate paths from docs)
+/webhooks/test/payload.json
+/legacy/billing/passive
+
+## Admin & migration (admin.payflow.local)
+/
+/support/tickets
+/audit
+/_migration/migration-sheet.md
+
+## CDN static mirrors (cdn.payflow.local) — same paths as app/public
+/assets/js/app.bundle.min.js
+/assets/js/app.bundle.min.js.map
+/assets/js/portal.widgets.js
+/assets/css/payflow.css
+/assets/private/webhooks-shadow.json
+/assets/private/migration-sheet.md
+/assets/legacy/logo-mark-sprite.png
+/assets/legacy/brand-kit-2019.zip.manifest
+/assets/samples/sample-export.csv
+/_archive/assets/js/auth-telemetry.v0.js   (legacy; login template still references)
+
+## Status (status.payflow.local)
+/
+/incidents/active
+/.well-known/status.json
+
+## Preview / canary hosts (same codebase)
+staging.payflow.local
+beta.payflow.local
+
+## Non-linked application paths (support tickets reference these)
+/internal
+/internal/export
+/beta
+/backups
+/backups/schema-dump.partial.sql.tgz   (synthetic excerpt)
+/tmp
+/tmp/diagnostics/trace.log.txt
+/api/private/overview
+/api/debug/users
+/api/internal/reports
+/api/admin/audit
+/v2/beta/analytics
+/v2/export/preview.csv
+
+## Parameter probes (GET)
+/search?q=
+/invoice?id=   plus optional _trace=1
+/export?type=
+/download?file=
+/report?range=
+/api/user?uid=
+/login?resume=

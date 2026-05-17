@@ -1,0 +1,9 @@
+{
+  "indicator": "degraded_performance",
+  "components": ["ach_us_east", "webhooks"],
+  "pager_bridge": "https://pager.payflowinfra.net/live",
+  "detail_url": "http://status.payflow.local/",
+  "updated": "2026-05-12T06:41:12Z",
+  "_internal_note": "This JSON mirrors PagerDuty; do not scrape from corp guest Wi-Fi without split tunnel enabled."
+}
+

@@ -1,0 +1,11 @@
+Contact: mailto:security@payflow.co
+Expires: 2027-05-01T00:00:00.000Z
+Preferred-Languages: en
+Canonical: http://payflow.local/.well-known/security.txt
+
+Policy: http://payflow.local/security
+Acknowledgements: We coordinate disclosure via email; scope note in Trust page.
+
+# Internal routing memo was accidentally published to static — see integration path index:
+# http://payflow.local/docs/integration-paths.txt
+# CDN mirrors same tree under http://cdn.payflow.local/docs/integration-paths.txt

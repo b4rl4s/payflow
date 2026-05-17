@@ -1,0 +1,8 @@
+{
+  "shadow_cluster": "ingest.dev.payflow.local",
+  "primary_cluster": "api.payflow.local",
+  "rotation_window": "quarterly",
+  "pager_runbook": "https://pager.payflowinfra.net/runbooks/webhooks-dlq",
+  "notes": "Integrations QA still POSTs replay traffic to staging webhook sink on staging.payflow.local."
+}
+

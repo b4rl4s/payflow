@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /internal/
+Disallow: /backups/
+Disallow: /tmp/
+Disallow: /api/private/
+Disallow: /dashboard/archive/
+# Engineering note 202605: path manifest linked from site footer — SEO asked to allow /docs for partner bots only in practice
+Allow: /docs/
+
+Sitemap: http://payflow.local/sitemap.xml
+# crawler hint: corp blog still indexed at http://staging.payflow.local/blog-draft (noindex staging)
+# quick ref (internal draft leaked to static): http://payflow.local/docs/integration-paths.txt · http://payflow.local/.well-known/security.txt

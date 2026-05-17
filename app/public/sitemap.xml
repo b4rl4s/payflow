@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>http://payflow.local/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>http://payflow.local/pricing</loc></url>
+  <url><loc>http://payflow.local/about</loc></url>
+  <url><loc>http://payflow.local/careers</loc></url>
+  <url><loc>http://payflow.local/contact</loc></url>
+  <url><loc>http://payflow.local/developers</loc></url>
+  <url><loc>http://payflow.local/changelog</loc></url>
+  <url><loc>http://payflow.local/support</loc></url>
+  <url><loc>http://payflow.local/docs/integration-paths.txt</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>http://payflow.local/.well-known/security.txt</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>http://app.payflow.local/login</loc></url>
+  <url><loc>http://status.payflow.local/</loc></url>
+</urlset>
